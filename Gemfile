@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'kramdown', '~> 1.13', '>= 1.13.2'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'faker', '~> 1.7', '>= 1.7.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'

@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Details</h1>
+  <h2><%= @article.title %></h2>
+  <%= Kramdown::Document.new(@article.content).to_html.html_safe %>
+  <p><strong>Created:</strong> <%= @article.created_at %></p>
+  <p><strong>Last edited:</strong> <%= @article.updated_at %></p>
+
+  <div class="div-margin"><%= link_to "Back to index", articles_path %></div>
+</div>
